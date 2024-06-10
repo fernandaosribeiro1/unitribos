@@ -1,0 +1,860 @@
+/*removendo a padronização do navegador.*/
+* {
+    font-family: 'inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    width: 100%;
+    height: 100%;
+}
+
+/*Topo-Site*/
+.cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Para ocupar a largura total da página */
+    z-index: 1000;
+    /* Para garantir que fique sobre outros elementos */
+    background-color: #fff;
+    /* Cor de fundo do menu */
+}
+
+header {
+    background-color: #536044;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    height: 40px;
+    background-color: #B6BF94;
+}
+
+nav ul {
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #4F6B15;
+    font-size: 19px;
+    text-decoration: none;
+    word-spacing: 2px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    font-weight: bold;
+}
+
+
+.menu a:hover {
+    border-radius: 10%;
+    background-color: rgb(197, 197, 197);
+    text-decoration: underline;
+    visibility: visible;
+    opacity: 100%;
+    transition: all ease 0.15s;
+}
+/*Fim topo site*/
+
+/*Home:*/
+/* CARROSSEL E CARDS: */
+#carouselExample {
+    max-width: 100%;
+    margin-bottom: -10px;
+    padding: 0;
+}
+
+.carousel-inner {
+    max-width: 100%;
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+}
+
+#noticias {
+    padding: 30px 0;
+    background-color: #f5f5f5;
+    max-width: 75%;
+    padding-left: 50px;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+}
+
+#noticias .section-title {
+    color: #4F6B15;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#noticias .section-subtitle {
+    font-size: 20px;
+    max-width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.5;
+}
+
+#noticias {
+    padding: 30px 0;
+    background-color: #f5f5f5;
+    max-width: 75%;
+    padding-left: 50px;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    display: flex;
+    /* Torna o contêiner um flex container */
+    flex-wrap: wrap;
+    /* Permite que os itens flexíveis sejam quebrados em várias linhas */
+    justify-content: space-between;
+    /* Distribui os itens ao longo do contêiner */
+}
+
+
+#noticias .card-img-top {
+    border-bottom: 1px solid #4F6B15;
+    /* Define uma borda inferior na imagem */
+    border-top-left-radius: 5px;
+    /* Arredonda os cantos superiores */
+    border-top-right-radius: 5px;
+}
+
+#noticias .card-title {
+    color: #4F6B15;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#noticias .card-text {
+    color: #536044;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: justify;
+    padding: 0 10px;
+    /* Adiciona preenchimento interno ao texto */
+    margin-left: 18px;
+    /* Ajusta a margem esquerda para alinhar com o título */
+}
+
+#noticias .card {
+    flex: 0 0 50%;
+    /* Define a largura dos cards */
+    margin: 0 auto 20px;
+    /* Centraliza horizontalmente e adiciona margem inferior aos cards */
+    max-width: 75%;
+    /* Limita a largura do card */
+}
+
+#noticias .btn-primary {
+    background-color: #4F6B15;
+    border-color: #4F6B15;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    /* Faz o botão se comportar como um bloco */
+    margin: 10px auto 0;
+    /* Centraliza horizontalmente e adiciona margem superior */
+    width: 150px;
+    /* Define a largura do botão */
+}
+
+#noticias .btn-primary:hover {
+    background-color: #3e4d13;
+    border-color: #3e4d13;
+}
+
+h6 {
+    padding-top: 18px;
+    display: block;
+    /* Garante que a imagem seja exibida como bloco */
+    text-align: center;
+    font-weight: bold;
+    color: #536044
+}
+
+.subtitulo2 {
+    /*Utilizei essa tag para a maioria dos textos do código, simplificando assim a estrutura.*/
+    max-width: 65%;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.5;
+}
+/*FIM DA HOME*/
+
+
+/*Memórias Índigenas:*/
+.titulomemorias {
+    color: #4F6B15;
+    text-transform: uppercase;
+    /* Transforma o texto em maiúsculas */
+    padding: 10px;
+    /* Espaçamento interno de 10px em todas as direções */
+    margin: 30px 0;
+    /* Espaçamento externo de 30px na parte superior e inferior, e 0 nas laterais */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    line-height: 1.5;
+    /* Espaçamento entre linhas */
+}
+
+.titulomemorias {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    max-width: 75%;
+    margin-bottom: -70px;
+    /* Reduz a margem inferior */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Define negrito */
+    color: #4F6B15;
+    /* Cor do texto */
+    text-transform: uppercase;
+    /* Transforma o texto em maiúsculas */
+}
+
+.containerHeader {
+    margin: 0 auto;
+    /*flexbox*/
+    display: flex;
+    align-items: center;
+    /*altura*/
+    height: 50px;
+}
+
+.containerHeader img {
+    max-width: 89%;
+    /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+
+.content {
+    max-width: 100%;
+    margin-bottom: -10px;
+    padding: 0;
+    /* Remova qualquer preenchimento */
+}
+
+.content picture img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 600px;
+    /* Defina a altura máxima desejada */
+}
+
+.container-importancia {
+    margin: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os itens sejam quebrados em uma nova linha em telas menores */
+    justify-content: space-between;
+    /* Distribui os itens horizontalmente com espaço entre eles */
+    align-items: flex-start;
+}
+
+.contentimg {
+    margin: 0 auto;
+    padding: 2vw;
+    max-width: 75%;
+    /* Define a largura máxima da imagem */
+    position: relative;
+}
+
+.contentimg figure {
+    position: relative;
+}
+
+.contentimg img {
+    border: 3px solid #4F6B15;
+    /* Redução da espessura da borda */
+    display: block;
+    /* Garante que a imagem seja exibida como bloco */
+    max-width: 100%;
+    /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto;
+    /* Permite que a altura da imagem seja ajustada automaticamente */
+}
+
+.contentimg figcaption {
+    background: rgba(100, 100, 100, 0.7);
+    /* Adiciona um fundo semitransparente */
+    position: absolute;
+    /* Define o posicionamento absoluto */
+    bottom: 0;
+    /* Alinha o figcaption na parte inferior da imagem */
+    left: 50%;
+    /* Move o figcaption para o centro horizontal */
+    transform: translateX(-50%);
+    /* Corrige o posicionamento para o centro horizontal */
+    width: 100%;
+    /* Define a largura igual à largura da imagem */
+    padding: 10px;
+    /* Adiciona um preenchimento dentro do figcaption */
+    box-sizing: border-box;
+    /* Garante que o padding seja incluído na largura total */
+    text-align: center;
+    /* Centraliza o conteúdo do figcaption */
+    color: white;
+    /* Define a cor do texto */
+    font-weight: bold;
+}
+
+.subtitulo {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    max-width: 75%;
+    margin-bottom: 20px;
+    /* Reduz a margem inferior */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Define negrito */
+    color: #4F6B15;
+    /* Cor do texto */
+}
+.content-funai {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    /* Remova qualquer preenchimento */
+}
+
+.content-funai picture {
+    width: 100%;
+    max-width: none; /* Remover a limitação máxima de largura */
+}
+
+.content-funai picture img {
+    width: 100%;
+    height: auto; /* Garante que a proporção da imagem seja mantida */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do seu contêiner */
+}
+
+
+/*Aqui começa a estilização das tabelas:*/
+.titulotabelafunai {
+    margin-top: 5px;
+    margin-left: 18%;
+    text-align: justify;
+    max-width: 75%;
+    margin-bottom: 20px;
+    /* Reduz a margem inferior */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Define negrito */
+    color: #4F6B15;
+    /* Cor do texto */
+}
+
+.tituloonu{
+    margin-top: 5px;
+    margin-left: 18%;
+    text-align: justify;
+    max-width: 75%;
+    margin-bottom: 20px;
+    /* Reduz a margem inferior */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Define negrito */
+    color: #4F6B15;
+    /* Cor do texto */
+}
+
+.onutexto{
+    max-width: 65%;
+    padding: 10px;
+    margin-top: -22px;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.5;
+}
+.bibliografia {
+    max-width: 65%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.bibliografia a {
+    color: #4F6B15; /* Cor do link */
+    text-decoration: underline; /* Adicionar sublinhado ao link */
+}
+
+.bibliografia a:hover {
+    color: #3e4d13; /* Mudar a cor do link ao passar o mouse */
+}
+
+table {
+    max-width: 65%;
+    margin-top: 20px;
+    width: 75%;
+    /*max de widht de 100% definido na tag pai*/
+    border: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabela2 table {
+    margin-top: 20px;
+    width: 75%;
+    /*max de widht de 100% definido na tag pai*/
+    border: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trTitle {
+    background: #B6BF94
+        /*define cor do fundo apenas do cabeçalho*/
+
+}
+
+.trTitle th {
+    color: #4F6B15
+}
+
+.trnorte {
+    /* estiliza nova linha*/
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.trnordeste {
+    /* estiliza nova linha*/
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.trcentrooeste {
+    /* estiliza nova linha */
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.trsudeste {
+    /*estiliza nova linha*/
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.trsul {
+    /*estiliza nova linha*/
+    background: #f5f5f5;
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    /* Para garantir que as bordas da tabela sejam colapsadas */
+    border: 1px solid #4F6B15;
+}
+
+table td,
+table th {
+    padding: 5px;
+    border: 1px solid #4F6B15;
+    /* Cor e espessura das bordas das células */
+    width: 50px;
+}
+
+
+.tabela2 {
+    width: 75%;
+    /*max de widht de 100% definido na tag pai*/
+    border: 1px solid #4F6B15;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabela2 table th,
+.tabela2 td {
+    border: 1px solid #4F6B15;
+    /* Cor e espessura das bordas das células */
+    width: 50px;
+}
+
+.tabela2 th {
+    width: 50px;
+    /* Largura da última coluna */
+}
+
+table,
+.tabela2 {
+    width: 75%;
+    border-collapse: collapse;
+    /* Para garantir que as bordas da tabela sejam colapsadas */
+    border: 1px solid #4F6B15;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td,
+table th,
+.tabela2 td,
+.tabela2 th {
+    border: 1px solid #4F6B15;
+    /* Cor e espessura das bordas das células */
+    padding: 8px;
+    /* Espaçamento interno das células */
+}
+
+.tabela2 th {
+    width: 50px;
+    /* Largura da última coluna */
+}
+
+.tabela2 th:nth-child(2),
+.tabela2 td:nth-child(2),
+.tabela2 th:nth-child(3),
+.tabela2 td:nth-child(3) {
+    width: 30px;
+    /* Largura das colunas do meio */
+}
+
+.trtabela2 {
+    /* Estiliza nova linha */
+    background: #f5f5f5;
+    text-align: center;
+}
+
+
+/*Ongs*/
+.filtro {
+    color: #4F6B15;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.filtrofiltroreg {
+    text-align: center;
+    color: #4F6B15;
+}
+
+.dropdown {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.dropdown label {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.dropdown select {
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#resultado {
+
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#resultado h2 {
+    color: #4F6B15;
+    font-weight: bold;
+}
+
+#resultado p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.containertxtfiltro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imgs {
+    width: 350px;
+    /* Define a largura desejada */
+    height: auto;
+    /* Ajusta a altura proporcionalmente */
+    margin-right: 10px;
+    border-radius: 10px;
+
+}
+
+.textoimg {
+    padding-left: 50px;
+}
+
+
+.textofiltro {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: 0;
+    max-width: 75%;
+}
+
+.regioes-single-card {
+    margin-bottom: 30px;
+}
+
+.regioes-single-card p {
+    max-width: 100%;
+}
+
+
+
+
+/*Sobre nós:*/
+.quemsomos {
+    font-weight: bold;
+    font-size: 32px;
+    color: #3e4d13;
+    max-width: 65%;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.5;
+}
+
+.textoquemsomos {
+    max-width: 65%;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.5;
+}
+
+.linhadebaixodoquemsomos {
+    color: #b1b1b1;
+    max-width: 100%;
+
+}
+
+.fotosmembros {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+
+}
+
+.fotofernanda,
+.fotoguilherme {
+    border-radius: 30px;
+    padding-left: 50px
+}
+
+figcaption {
+    text-align: center;
+}
+
+.nossamissao {
+    text-align: center;
+    margin-top: -60px;
+    /* Ajustando o espaçamento apenas para o primeiro bloco */
+    margin-bottom: 20px;
+    /* Adicionando espaço abaixo do primeiro bloco */
+}
+
+.agradecimentos {
+    margin-top: 10px;
+    /* Ajustando o espaçamento acima do segundo bloco */
+}
+
+.textoagradecimentos1 {
+    max-width: 65%;
+    padding: 10px;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    font-style: italic;
+}
+
+p {
+    max-width: 90%;
+    padding: 3px;
+    margin-top: 2px;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: 59px;
+    line-height: 1.5;
+}
+
+
+
+.fotofernanda a,
+.fotoguilherme a {
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+    /* Cor do texto do link */
+    text-decoration: none;
+    /* Remover sublinhado padrão */
+    font-weight: bold;
+    /* Negrito */
+}
+
+.fotofernanda a:hover,
+.fotoguilherme a:hover {
+    font-size: 22px;
+    color: #4F6B15;
+    /* Cor do texto ao passar o mouse */
+}
+
+.fotofernanda a:visited,
+.fotoguilherme a:visited {
+    color: #4F6B15;
+    /* Cor do texto de links visitados */
+}
+
+
+
+
+
+/*Footer:*/
+
+footer {
+    background-color: #536044;
+    padding: 20px 0;
+    color: #fff;
+    /* Adicionei a cor do texto para garantir visibilidade */
+}
+
+.footer {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    /* Justifica o conteúdo das colunas */
+    align-items: flex-start;
+}
+
+.footer div {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* Adicionei margem inferior para separar as colunas */
+}
+
+
+.footer h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #B6BF94;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    /* Adicionei negrito para os links */
+}
+
+.footer p {
+
+    margin-bottom: 10px;
+}
+
+.footer .contato {
+    flex: 1;
+    /* Distribui igualmente o espaço entre as colunas */
+    margin-right: 10px;
+    /* Adiciona margem direita entre as colunas */
+    margin-bottom: 10px;
+    /* Adiciona margem inferior para separar as colunas */
+}
+
+.footer .contato h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #B6BF94;
+}
+
+.footer .contato p {
+    margin-left: inherit;
+    margin-bottom: -5px;
+}
+
+.containerfooter {
+    position: relative;
+    /* Definir a posição como relativa */
+}
+
+.containerfooter figure {
+    position: absolute;
+    /* Definir a posição como absoluta */
+    bottom: 0;
+    /* Posicionar no fundo */
+    right: 0;
+    /* Posicionar no lado direito */
+}
