@@ -21,6 +21,11 @@ Durante o desenvolvimento deste projeto, os seguintes conceitos foram explorados
 * **CSS3**
 * **JavaScript (ES6)**
 
+## 🚀 Vídeo Explicativo:
+
+* Acesse ao vídeo explicativo do projeto, com informações detalhadas sobre a ideia:
+https://youtu.be/ouv64tQOWlg 
+
 ## 🤝 Como Contribuir
 
 Fique à vontade para fazer um **fork** do projeto, explorar o código e sugerir melhorias. Toda contribuição é bem-vinda!
